@@ -1,245 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Self-Care Toolkit</title>
+	<title>chabot-stress-detector</title>
+	<link rel="stylesheet" href="/css/style-login-form.css">
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" id="text-color">Chatbot</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item" id="nav-text">
-                        <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><b>Contact us</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><b>About us</b></a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit"><b>Search</b></button>
-                </form>
-            </div>
-        </div>
-    </nav>
-    <!-- Heading Section -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner" style=margin-bottom:2rem>
-            <div class="carousel-item active">
-                <img src="image/slide1.jpg" class="d-block w-100" alt="...">
 
-            </div>
-            <div class="carousel-item">
-                <img src="image/slide2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="image/slide3.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    </header>
-    <!-- Suggestion -->
-    <!-- Full screen modal -->
-    <div class="scrollmenu">
-        <figure class="figure" id="image">
-            <img src="image/Dr. Ahmed.png" class="circular--square" alt="...">
-            <figcaption class="figure-caption">Dr. Ahmed</figcaption>
-        </figure>
-        <figure class="figure">
-            <img src="image/Dr. Rashid.jpeg" class="circular--square" alt="...">
-            <figcaption class="figure-caption">Dr. Rashid</figcaption>
-        </figure>
-        <figure class="figure">
-            <img src="image/Dr. Deepak.jpeg" class="circular--square" alt="...">
-            <figcaption class="figure-caption">Dr. Deepak</figcaption>
-        </figure>
-        <figure class="figure">
-            <img src="image/Dr. Ibrahim.jpeg" class="circular--square" alt="...">
-            <figcaption class="figure-caption">Dr. Ibrahim</figcaption>
-        </figure>
-        <figure class="figure">
-            <img src="image/Dr. Faisal.jpeg" class="circular--square" alt="...">
-            <figcaption class="figure-caption">Dr. Faisal</figcaption>
-        </figure>
-        <figure class="figure">
-            <img src="image/Dr. Ibrar.jpeg" class="circular--square" alt="...">
-            <figcaption class="figure-caption">Dr. Ibrar</figcaption>
-        </figure>
-        <figure class="figure">
-            <img src="image/Dr. Ali.jpeg" class="circular--square" alt="...">
-            <figcaption class="figure-caption">Dr. Ali</figcaption>
-        </figure>
-        <figure class="figure">
-            <img src="image/Dr. Mohid.jpg" class="circular--square" alt="...">
-            <figcaption class="figure-caption">Dr. Mohid</figcaption>
-        </figure>
-    </div>
+	<div id="login-box">
+		<div class="left">
+			<h1 id='status'>Sign Up</h1>
+			<input type="email" id="email" name="email" placeholder="E-mail" />
+			<input type="password" id="password" name="password" placeholder="Password" />
+			<input type="text" id="username" name="username" placeholder="Username" />
+			<div class="but">
+			<input type="submit" class="handle1" id='signUp' name="sigUp" value="signUp" />
+			<input type="submit" class="handle2" id='login' name="sigUp" value="Login" />
+			</div>
+		</div>
 
+		<div class="right">
+			<span class="loginwith">Sign in with<br />social network</span>
 
-    <!-- Cards Section -->
-    <div class="container">
-        <div class="row align-items-start" id="row1">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="image/exercise.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Exercise Routine</b></h5>
-                        <p class="card-text">If you want something you've never had, you must be willing to do something
-                            you've never done.</p>
-                        <a href="Exercise Routine.html" class="btn btn-primary"><b>Check Routines</b></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="image/sleep.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Sleep Routine</b></h5>
-                        <p class="card-text">A good laugh and a long sleep are the best cures in the doctor's book.</p>
-                        <a href="Sleep Routine.html" class="btn btn-primary"><b>Check Routines</b></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row align-items-center" id="row2">
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="image/diet.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Diet Schedule</b></h5>
-                        <p class="card-text">It is health that is real wealth and not pieces of gold and silver.</p>
-                        <a href="Diet Schedule.html" class="btn btn-primary"><b>Check Schedule</b></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="image/progress.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><b>Analyze Progress</b></h5>
-                        <p class="card-text">Progress is impossible without change, and those who cannot change their
-                            minds cannot change anything.</p>
-                        <a href="Analyze Progress.html" class="btn btn-primary"><b>Check Progress</b></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- footer -->
-    <div id="contact_section"
-        class="footer_section container-fluid bg-dark text-light mt-5 py-5 wow fadeInUp justify-content-center"
-        data-wow-delay="0.1s">
-        <div class="container pt-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About
-                            Us</a>
-                        <a class="text-light mb-2" href="#"><i
-                                class="bi bi-arrow-right text-primary me-2"></i>Services</a>
-                        <a class="text-light mb-2" href="#"><i
-                                class="bi bi-arrow-right text-primary me-2"></i>Testimonials</a>
-                        <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>
-                        Park Road, Islamabad Capital, Pakistan
-                    </p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>ahmadraza77887087@gmail.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+92307-7887087</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
-                            href="https://twitter.com/DeepKumarKhatri" target="_blank"><i
-                                class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
-                            href="https://www.facebook.com/DevDeeepakKumar" target="_blank"><i
-                                class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2"
-                            href="https://www.linkedin.com/in/deepakkumarkhatri/" target="_blank"><i
-                                class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded"
-                            href="https://github.com/DeepakKumarKhatri" target="_blank"><i
-                                class="fab fa-github fw-normal"></i></a>
-                    </div>
-                </div>
-                <div class="col-12 justify-content-center">
-                    <form class="mx-auto" style="max-width: 600px;">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                            <button class="btn btn-primary px-4">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid bg-primary text-light py-4">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom"
-                            href="https://github.com/DeepakKumarKhatri" target="_blank">Stress Detector Chatbot</a> has
-                        all
-                        Rights Reserved.</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Footer Section End -->
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-
+			<button class="social-signin facebook">Sign up with facebook</button>
+			<button class="social-signin twitter">Sign up with Twitter</button>
+			<button class="social-signin google">Sign up with Google+</button>
+		</div>
+		<div class="or">OR</div>
+	</div>
 </body>
+
+<script type="module">
+	// Import the functions you need from the SDKs you need
+
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+	import { getDatabase, set, ref} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+	import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+
+	// Your web app's Firebase configuration
+	const firebaseConfig = {
+		//yout config code
+		apiKey: "AIzaSyCs2lr5S14uC2VqPdnrV0jygHXjoLl8WGQ",
+		authDomain: "chabot-stress-detector.firebaseapp.com",
+		projectId: "chabot-stress-detector",
+		storageBucket: "chabot-stress-detector.appspot.com",
+		messagingSenderId: "913764575035",
+		appId: "1:913764575035:web:c44ad93ca79a7838bb391e",
+		measurementId: "G-7LYPHHSY00"
+	};
+
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const database = getDatabase(app);
+	const auth = getAuth();
+
+	signUp.addEventListener('click', (e) => {
+
+		var email = document.getElementById('email').value;
+		var password = document.getElementById('password').value;
+		var username = document.getElementById('username').value;
+
+		createUserWithEmailAndPassword(auth, email, password)
+			.then((userCredential) => {
+				// Signed Up
+				const user = userCredential.user;
+
+				set(ref(database, 'users/' + user.uid), {
+					username: username,
+					email: email
+				})
+
+				alert('user created!');
+				// ...
+			})
+			.catch((error) => {
+				const errorCode = error.code;
+				const errorMessage = error.message;
+
+				alert(errorMessage);
+				// ..
+			});
+
+	});
+
+	login.addEventListener('click', (e) => {
+		window.location.replace("login-form.html")
+
+	});
+</script>
 
 </html>
