@@ -1,0 +1,93 @@
+/*  */
+ /* index */
+.heading{
+    background-image: url("main.jpg");
+    text-align: center;
+}
+/* .card3{
+    padding-top: 3rem;
+} */
+#row2{
+    padding-top: 4rem;
+}
+.text{
+    color: #0d6efd;
+}
+#navbar{
+    /* margin-bottom: 3rem; */
+    color: aliceblue;
+    justify-content: right;
+}
+.bg-light {
+    background: linear-gradient(0deg, rgba(158, 236, 255, 1) 0%, rgba(38, 0, 86, 1) 100%)!important;
+    color: aliceblue;
+}
+#accordionExample{
+    margin-bottom: 3rem;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#carouselExampleCaptions{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+}
+.circular--square{
+    border-radius: 100%;
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(251, 244, 244, 0.9);
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255, 249, 249, 0.9);
+}
+.navbar-light .navbar-nav .nav-link {
+    text-decoration: double;
+    color: rgba(255, 249, 249, 0.9);
+}
+.btn-outline-success {
+    color: rgba(255, 249, 249, 0.9);
+    border-color: rgba(255, 249, 249, 0.9);
+}
+.figure {
+    margin: 0 3rem 1rem;
+}
+.figure-caption {
+    font-size: .875em;
+    color: rgba(18, 57, 135, 0.9);
+}
+.figure-caption{
+    text-align: center;
+}
+.info{
+    display: none;
+}
+.figure:hover + .info{
+    display: inline-flex;
+}
+
+ /* Exercise */ 
+.section{
+    background-image: url(../image/Exercise/Gym.jpg);
+}
+#col-section{
+    margin-top: 2rem;
+}
+/* Sleep */
+.section-sleep {
+    background-image: url(../image/Sleep/Sleep.png);
+}
+/* Diet */
+.section-diet{
+    background-image: url(../image/Diet/Diet.jpg);
+}
+
+.section-progress{
+    background-image: url(../image/Progress/progress.jpg);
+}
