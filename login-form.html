@@ -6,26 +6,27 @@
 </head>
 
 <body>
-
-	<div id="login-box">
-		<div class="left">
-			<h1 id='status'>Sign Up</h1>
-			<input type="email" id="email" name="email" placeholder="E-mail" />
-			<input type="password" id="password" name="password" placeholder="Password" />
-			<div class="but2">
-			<input type="submit" class="handle1" id='signUp' name="sigUp" value="signUp" />
-			<input type="submit" class="handle2" id='login' name="sigUp" value="Login" />
+	<div class="container-fluid">
+		<div class="container" id="login-box">
+			<div class="left">
+				<h1 id='status'>Sign Up</h1>
+				<input type="email" id="email" name="email" placeholder="E-mail" />
+				<input type="password" id="password" name="password" placeholder="Password" />
+				<div class="but2">
+					<input type="submit" class="handle1" id='signUp' name="sigUp" value="signUp" />
+					<input type="submit" class="handle2" id='login' name="sigUp" value="Login" />
+				</div>
 			</div>
-		</div>
 
-		<div class="right">
-			<span class="loginwith">Sign in with<br />social network</span>
+			<div class="right">
+				<span class="loginwith">Sign in with<br />social network</span>
 
-			<button class="social-signin facebook">Sign up with facebook</button>
-			<button class="social-signin twitter">Sign up with Twitter</button>
-			<button class="social-signin google">Sign up with Google+</button>
+				<button class="social-signin facebook">Sign up with facebook</button>
+				<button class="social-signin twitter">Sign up with Twitter</button>
+				<button class="social-signin google">Sign up with Google+</button>
+			</div>
+			<div class="or">OR</div>
 		</div>
-		<div class="or">OR</div>
 	</div>
 </body>
 
@@ -56,7 +57,7 @@
 	const auth = getAuth();
 
 	signUp.addEventListener('click', (e) => {
-        window.location.replace("index.html")
+		window.location.replace("index.html")
 	});
 
 	login.addEventListener('click', (e) => {
@@ -72,9 +73,9 @@
 				update(ref(database, 'users/' + user.uid), {
 					last_login: dt,
 				})
-                window.location.replace("home.html");
+				window.location.replace("home.html");
 				// window.open("")
-                
+
 				// ...
 			})
 			.catch((error) => {
